@@ -4,12 +4,12 @@ from connection import read_json, write_json
 import nltk
 
 from sentiment_analysis import FinBert
-# nltk.download('punkt')
+nltk.download('punkt')
 
 
 def main():
-    visited_articles = read_json("data/working/visited.json")
-    found_articles = read_json("data/working/history.json")
+    visited_articles = read_json("data/visited.json")
+    found_articles = read_json("data/history.json")
     model = FinBert()
     print(f"Parsing articles...\n")
     for url, value in found_articles.items():
@@ -31,4 +31,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    model = FinBert()
+    print(model.findPercentageBySentence("This sucks"))
