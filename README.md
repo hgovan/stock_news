@@ -1,6 +1,6 @@
 # stock_news
 
-This repo is designed to aggregate active ticker and leverage the website [finviz](www.finviz.com) to aggregate news associated with that company and produce a sentiment score for each article.  These scores can then be used in a broader model to better understand the companies public stature
+This repo is designed to aggregate active ticker and leverage the website [finviz](www.finviz.com) to aggregate news associated with that company and produce a sentiment score for each article.  These scores can then be used in a broader model to better understand the companies public stature.
 
 ## How do the modules interact with each other...
 
